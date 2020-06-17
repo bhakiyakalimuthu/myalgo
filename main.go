@@ -1,4 +1,5 @@
-package myalgo
+package main
 
+func main() {
 
-
+}

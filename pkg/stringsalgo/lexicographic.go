@@ -4,7 +4,7 @@ import "strings"
 
 func smallestString(substrings []string) string {
 	// Write your code here
-	sort(substrings, len(substrings))
+	lexisort(substrings, len(substrings))
 	s := ""
 	n := len(substrings)
 	for i := 0; i < n; i++ {
@@ -12,7 +12,7 @@ func smallestString(substrings []string) string {
 	}
 	return s
 }
-func sort(a []string, n int) {
+func lexisort(a []string, n int) {
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
 			str1 := a[i] + a[j]
